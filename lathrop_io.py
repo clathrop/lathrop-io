@@ -19,6 +19,10 @@ app.config.from_object(__name__)
 def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
 
+@app.route('/home')
+def homepage():
+    return render_template('home.html')
+
 @app.route('/')
 def show_entries():
     cur = g.db.execute('select title, text from entries order by id desc')

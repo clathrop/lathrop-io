@@ -1,0 +1,54 @@
+<!doctype html>
+<head>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.css"></link>
+    <link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap-theme.css.map"></link>
+    <link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.css.map"></link>
+    <script src="static/bootstrap/js/bootstrap.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+var jumboHeight = $('.jumbotron').outerHeight();
+function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+}
+
+$(window).scroll(function(e){
+    parallax();
+});
+    </script>
+</head>
+<title>lathrop.io</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->    
+    <div class="header-image">
+    <img class="header-image img-responsive" src="/static/bay-bridge.png" alt="Bay Bridge"/> 
+
+    <h1 class="text-center head-name">Carter Lathrop</h1>
+    </div>
+
+
+<div class="container">
+      <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    	</div>
+	</div>
+  </div>
