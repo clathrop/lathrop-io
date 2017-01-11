@@ -41,22 +41,31 @@
 	margin-right: 30px;
 }
 
-a{
-	text-decoration: none !important;
-	color: white;
+a {
+  text-decoration: inherit;
+  font-style: inherit;
+  color: white;
+}
+
+a:link, a:visited {
+ border: none;
+ text-decoration: none;
+ font-style: normal;
+ color: white;
 }
 
 a:hover{
+	text-decoration: none;
 	color: gray;
+}
+
+/*a:visited{
+	color: white;
 }
 
 a:active{
 	color: gray;
-}
-
-a:visited{
-	color: white;
-}
+}*/
 
 .sub-heading{
 	line-height: 32px;
